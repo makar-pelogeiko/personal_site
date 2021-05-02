@@ -1,0 +1,226 @@
+
+{% extends "common_base.html" %}
+{% block title %}{{title_name}}{% endblock %}
+{% block content %}
+    <!-- slider_area_start -->
+    <div class="slider_area">
+        <div class="single_slider  d-flex align-items-center slider_bg_1">
+            <div class="container">
+                <div class="row align-items-center position-relative">
+                    <div class="col-lg-9">
+                        <div class="slider_text">
+                            <h3>Привет, я Макар <br>
+                                <span>Студент 2 курса<br>Мат-Меха</span></h3>
+                        <a class="boxed-btn3-line" href="works.html">Посмотреть работы</a>
+                        </div>
+                    </div>
+                    <div class="my_img d-none d-lg-block">
+                        <img src="{{ url_for('static', filename='img/about/my_img.png') }}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- slider_area_end -->
+
+    <div class="download_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-10">
+					<a name="about-me"></a>
+                    <div class="download_text">
+                        <h3>Я Макар Пелогейко, обучаюсь программной инженерии в СПБГУ на Мат-Мехе на кафедре системного программирования </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="download_left">
+                        <p>В детсве занимался бальными танцами, ссмешанными единоборствами. Впервые задумался о программировании в конце 8 класса. с 9 по 11 класс учился в
+							ГБОУ Лицее 393 города Санкт-Петербурга. В этот период времени занимался паркуром и начинал смотреть в сторону
+							компьютерной безопасности. В 10 классе вступил в ряд молодежных организаций (МО Княжево, Молодежный парламент Кировского района, РДШ, ДМО "Открытие"),
+							где принимал участие в  соревнованиях, форумах и выступлениях.По окончании школы собирался поступать в ЛЭТИ на ФКТИ (Компьютерная безопасность),так как
+							определенные достижения в области были, но по факту после ЕГЭ, постояв 10 минут в приемной ФКТИ ЛЭТИ, я пошел спать. Утром решился позвонить в СПБГУ и узнать,
+							какие там есть направления. После короткого разовора я понял, что документы, которые я готовил для Политеха надо везти в СПБГУ. Я подавал документы на стрелке васильевского острова с видом на Неву
+							(тогда я еще не знал, что надо будет учиться в Петергофе). Направление я выбирал уже в процессе подачи документов и долого колебался, так как стипендии в СПБГУ сильно ниже стипендий Политеха и ИТМО.
+							Но все-таки я выбрал МатМех СПБГУ и до сих пор рад, что тогда вышел из приемной ФКТИ и поступил именно в СПБГУ. 
+                        </p>
+                        <p>В процессе студенчества на первом курсе я несколько раз выезжал на МТБ марафоны и принимал участие в мероприятиях университета. к 2 курсу свободного времени практически не осталось,
+							основную часть времени уделяю учебе и остатки проекту RED PALMS</p>
+                    </div>
+					<div class="more_works">
+                                    <a class="boxed-btn3-line" href="#">Мои Увлечения</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 offset-lg-1 col-md-6">
+					<div class="text-center my-orange"><h3><span class="my-orange">Достижения</span></h3></div>
+                    <div class="progress_skills">
+						<div class="single_progress">
+                            <div class="label d-flex justify-content-between">
+                                <span>диплом 3 степени Открытой олимпиады ИТМО (информатика)</span>
+                                <span>2017</span>
+                            </div>
+                        </div>
+						<div class="single_progress">
+                            <div class="label d-flex justify-content-between">
+                                <span>участник серии акций "Эко-Кировский"</span>
+                                <span>2017-2020</span>
+                            </div>
+                        </div>
+						<div class="single_progress">
+                            <div class="label d-flex justify-content-between">
+                                <span>участникб спикер международной конференции "Современное управление"</span>
+                                <span>2017</span>
+                            </div>
+                        </div>
+                        <div class="single_progress">
+                            <div class="label d-flex justify-content-between">
+                                <span>3 место spb school ctf</span>
+                                <span>2018</span>
+                            </div>
+                        </div>
+                        <div class="single_progress">
+                            <div class="label d-flex justify-content-between">
+                                <span>11 место shadowctf в Москве</span>
+                                <span>2018</span>
+                            </div>
+                        </div>
+						<div class="single_progress">
+                            <div class="label d-flex justify-content-between">
+                                <span>компьютерное зрение "Город образования" (тех поддержка)</span>
+                                <span>2018</span>
+                            </div>
+                        </div>
+						<div class="single_progress">
+                            <div class="label d-flex justify-content-between">
+                                <span>волонтер на VKfest</span>
+                                <span>2019</span>
+                            </div>
+                        </div>
+						<div class="single_progress">
+                            <div class="label d-flex justify-content-between">
+                                <span>волонтер ZeroNights</span>
+                                <span>2019</span>
+                            </div>
+                        </div>
+						<div class="single_progress">
+                            <div class="label d-flex justify-content-between">
+                                <span>1 из организаторов SPbU Fashion day (поиск спонсоров и тех. поддержка)</span>
+                                <span>2019</span>
+                            </div>
+                        </div>
+						<div class="single_progress">
+                            <div class="label d-flex justify-content-between">
+                                <span>1 из организаторов Miss SPbU (тех. поддержка)</span>
+                                <span>2019</span>
+                            </div>
+                        </div>
+						<div class="single_progress">
+                            <div class="label d-flex justify-content-between">
+                                <span>copter hack (сбор дрона Клевер-4)</span>
+                                <span>2019</span>
+                            </div>
+                        </div>
+						<div class="single_progress">
+                            <div class="label d-flex justify-content-between">
+                                <span>Молодежная Практическая конференция</span>
+                                <span>2020</span>
+                            </div>
+                        </div>
+						<div class="single_progress">
+                            <div class="label d-flex justify-content-between">
+                                <span>Куратор</span>
+                                <span>2020-2021</span>
+                            </div>
+                        </div>
+						<div class="single_progress">
+                            <div class="label d-flex justify-content-between">
+                                <span>участник Унивидение 2021</span>
+                                <span>2021</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+	<!-- testimonial_area  -->
+        <div class="testimonial_area ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="section_title">
+                            <h3><a name="reviews">Отзывы</a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="testmonial_active owl-carousel">
+                            <div class="single_carousel">
+                                <div class="row">
+                                    <div class="col-xl-9 col-md-9">
+                                        <div class="single_testmonial">
+                                            <p>Зачет
+                                            </p>
+                                            <div class="testmonial_author">
+                                                <div class="thumb">
+                                                    <img src="{{ url_for('static', filename='img/case/matvey.jpg') }}" alt="">
+                                                </div>
+                                                <div class="author_name">
+                                                    <h3>Матвей Брыксин</h3>
+                                                    <span>UI/UX Дизайнер</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single_carousel">
+                                <div class="row">
+                                    <div class="col-xl-9 col-md-9">
+                                        <div class="single_testmonial">
+                                            <p>Конечно, ваши фильтры - это знатный хак, и в индустрии вот прямо так делать не будут,
+												но пусть. Это зачёт.
+                                            </p>
+                                            <div class="testmonial_author">
+                                                <div class="thumb">
+                                                    <img src="{{ url_for('static', filename='img/case/sten.jpg') }}" alt="">
+                                                </div>
+                                                <div class="author_name">
+                                                    <h3>Станислав Сартасов</h3>
+                                                    <span>Старший перполдаватель кафедры СП Мат-Мех СПБГУ</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single_carousel">
+                                <div class="row">
+                                    <div class="col-xl-9 col-md-9">
+                                        <div class="single_testmonial">
+                                            <p>
+											Я правильно сделал, что поставил Вам больше 2.
+                                            </p>
+                                            <div class="testmonial_author">
+                                                <div class="thumb">
+                                                    <img src="{{ url_for('static', filename='img/case/kakadu.jpg') }}" alt="">
+                                                </div>
+                                                <div class="author_name">
+                                                    <h3>Kakadu</h3>
+                                                    <span>Преподаватель по функциональным языкам</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /testimonial_area  -->
+		{% endblock %}

@@ -1,0 +1,6 @@
+{% extends "base_work.html" %}
+{% block title %}{{title_name}}{% endblock %}
+{% block title_full %}{{full_name}}{% endblock %}
+{% block image %}{{url_for('static', filename=image_path)}}{% endblock %}
+{% block review %}{{description|safe}}{% endblock %}
+

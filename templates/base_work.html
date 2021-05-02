@@ -1,0 +1,39 @@
+﻿{% extends "common_base.html" %}
+{% block content %}
+    <!-- bradcam_area  -->
+    <div class="bradcam_area bradcam_area2 bradcam_bg_1">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="bradcam_text text-center">
+                        <h3>{% block title_full %}{% endblock %}</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/ bradcam_area  -->
+
+    <div class="projects_details_area">
+        <div class="container pos_up">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="banner_img">
+                        <img src="{% block image %} {% endblock %}" alt=""><!------------------------------------------------------------------------------------------>
+                    </div>
+                </div>
+            </div>
+			<div class="padder">
+			</div>
+			<div class="padder">
+			</div>
+            <div class="details_info">
+                <div class="row justify-content-center">
+                    <div class="col-xl-6 col-md-8 ">
+						{% block review %}{% endblock %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

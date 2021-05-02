@@ -1,0 +1,56 @@
+{% extends "common_base.html" %}
+{% block title %}{{title_name}}{% endblock %}
+{% block content %}
+
+         <!-- bradcam_area  -->
+         <div class="bradcam_area bradcam_bg_1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="bradcam_text text-center">
+                                <h3>Проекты</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/ bradcam_area  -->
+    <!-- gallery_area start  -->
+    <div class="gallery_area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-10 col-lg-10">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-6">
+							{% for item in projects_1 %}
+							<div class="single_gallery">
+                                <div class="thumb">
+                                    <img src="{{url_for('static', filename=item.img_path)}}" alt="">
+                                </div>
+                                <div class="gallery_heading">
+                                    <span>{{item.full_name}}</span>
+                                    <a href="/cwork?tname={{item.title_name}}"><h4>{{item.link_name}}</h4></a>
+                                </div>
+                            </div>
+							{% endfor %}
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6">
+							{% for item in projects_2 %}
+							<div class="single_gallery">
+                                <div class="thumb">
+                                    <img src="{{url_for('static', filename=item.img_path)}}" alt="">
+                                </div>
+                                <div class="gallery_heading">
+                                    <span>{{item.full_name}}</span>
+                                    <a href="/cwork?tname={{item.title_name}}"><h4>{{item.link_name}}</h4></a>
+                                </div>
+                            </div>
+							{% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- gallery_area end  -->
+	{% endblock %}
