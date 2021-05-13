@@ -3101,7 +3101,8 @@ h3 {
   font-size: 16px;
   margin-bottom: 0;
   font-size: 16px;
-  color: #2a2a2a;
+  /*color: #2a2a2a;*/
+  color: #8a8a8a;
 }
 
 /* line 30, ../../Arafath/CL/Cl November/228. Resume-02/HTML/scss/_contact.scss */
@@ -3210,6 +3211,7 @@ h3 {
 /* line 133, ../../Arafath/CL/Cl November/228. Resume-02/HTML/scss/_contact.scss */
 .contact-section {
   padding: 130px 0 100px;
+  background: #3B2930;
 }
 
 @media (max-width: 991px) {
