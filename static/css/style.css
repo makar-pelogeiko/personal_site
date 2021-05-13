@@ -1375,7 +1375,7 @@ h3 {
 /* line 4, ../../Arafath/CL/Cl November/228. Resume-02/HTML/scss/_slider.scss */
 .slider_bg_2 {
   background: #3B2930;
-  background-image: url(../img/banner/banner_2.png);
+  background-image: url(../img/backgrounds/backgr_2.png);
 }
 
 /* line 7, ../../Arafath/CL/Cl November/228. Resume-02/HTML/scss/_slider.scss */
@@ -1770,7 +1770,7 @@ h3 {
 
 /* line 35, ../../Arafath/CL/Cl November/228. Resume-02/HTML/scss/_counter.scss */
 .home_details {
-  background-image: url(../img/banner/home_details.png);
+  background-image: url(../img/backgrounds/home_details.png);
   background-size: cover;
   background-position: center center;
   padding: 140px 0;
@@ -2783,17 +2783,17 @@ h3 {
 
 /* line 1, ../../Arafath/CL/Cl November/228. Resume-02/HTML/scss/_bradcam.scss */
 .bradcam_bg_1 {
-  background-image: url(../img/banner/bradcam.png);
+  background-image: url(../img/backgrounds/bradcam.png);
 }
 
 /* line 4, ../../Arafath/CL/Cl November/228. Resume-02/HTML/scss/_bradcam.scss */
 .bradcam_bg_2 {
-  background-image: url(../img/banner/bradcam2.png);
+  background-image: url(../img/backgrounds/bradcam2.png);
 }
 
 /* line 7, ../../Arafath/CL/Cl November/228. Resume-02/HTML/scss/_bradcam.scss */
 .bradcam_bg_3 {
-  background-image: url(../img/banner/bradcam3.png);
+  background-image: url(../img/backgrounds/bradcam3.png);
 }
 
 /* line 10, ../../Arafath/CL/Cl November/228. Resume-02/HTML/scss/_bradcam.scss */
@@ -3070,7 +3070,7 @@ h3 {
   margin-top: 10px;
 }
 
-/*=================== contact banner start ====================*/
+/*=================== contact backgrounds start ====================*/
 /* line 3, ../../Arafath/CL/Cl November/228. Resume-02/HTML/scss/_contact.scss */
 .dropdown .dropdown-menu {
   -webkit-transition: all 0.3s;
@@ -3114,7 +3114,7 @@ h3 {
   color: #8a8a8a;
 }
 
-/*=================== contact banner end ====================*/
+/*=================== contact backgrounds end ====================*/
 /*=================== contact form start ====================*/
 /* line 45, ../../Arafath/CL/Cl November/228. Resume-02/HTML/scss/_contact.scss */
 .contact-title {
