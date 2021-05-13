@@ -1369,11 +1369,12 @@ h3 {
 /* line 1, ../../Arafath/CL/Cl November/228. Resume-02/HTML/scss/_slider.scss */
 .slider_bg_1 {
   background: #3B2930;
-  background-image: url(../img/banner/banner.png);
+  background-image: url(../img/backgrounds/main_back.png);
 }
 
 /* line 4, ../../Arafath/CL/Cl November/228. Resume-02/HTML/scss/_slider.scss */
 .slider_bg_2 {
+  background: #3B2930;
   background-image: url(../img/banner/banner_2.png);
 }
 
@@ -2629,7 +2630,7 @@ h3 {
   background-repeat: no-repeat;
   background-size: cover;
   background: #311E25;
-  background-image: url(../img/banner/footer_bg.png);
+  background-image: url(../img/backgrounds/footer_back.png);
 }
 
 /* line 7, ../../Arafath/CL/Cl November/228. Resume-02/HTML/scss/_footer.scss */
