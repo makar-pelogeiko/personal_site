@@ -6227,3 +6227,8 @@ h6 {
 .padder {
 	padding-bottom: 80px;
 }
+
+.contact-color {
+	color: #8a8a8a;
+	border-color: #8a8a8a;
+}
