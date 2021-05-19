@@ -82,8 +82,8 @@
       </div>
 	  {% if vkuser is defined %}
 	   <!-- Put this div tag to the place, where the Comments block will be -->
-	<button id="vk-sign"
-        type="submit"
+	<button id="vk-logout"
+        type="button" class="btn btn-outline-dark"
         onclick="location.href='http://178.154.212.140:5000/logout'">Sign out with VK</button>
 	<div id="vk_comments"></div>
 	<script type="text/javascript">
@@ -91,7 +91,7 @@
 	</script>
 	{% else %}
     <button id="vk-sign"
-        type="submit"
+        type="button" class="btn btn-outline-dark"
         onclick="location.href='https://oauth.vk.com/authorize?client_id=7858920&display=page&redirect_uri=http://178.154.212.140:5000/vk_login&scope=friends&response_type=code&v=5.130'">Sign in with VK</button>
 	{% endif %}
     </div>
