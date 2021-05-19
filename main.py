@@ -72,7 +72,7 @@ def my_contact():
         # posts = Posts.query.all()
         user_id = session.get('user_id')
         user = Users.query.filter_by(id=user_id).first()
-        return render_template("logout_index.html", name=user.name, vkuser=user_id)
+        return render_template('contact.html', title_name='Контакты', vkuser=user_id)
     #session['user_id'] = 'dsddd'
     return render_template('contact.html', title_name='Контакты')
 
