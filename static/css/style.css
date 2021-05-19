@@ -6232,3 +6232,7 @@ h6 {
 	color: #8a8a8a;
 	border-color: #8a8a8a;
 }
+
+.logout-padder {
+	padding-bottom: 1000px;
+}

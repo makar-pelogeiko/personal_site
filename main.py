@@ -62,6 +62,10 @@ def my_review():
 def my_about_me():
     return redirect(url_for('index_page',_anchor='about-me', title_name='Макар'))
 
+@app.route("/ensure_logout")
+def ensure_logout():
+    return render_template('logout.html', title_name='logout')
+
 #@app.route("/contact")
 #def my_contact():
 #    return render_template('contact.html', title_name='Контакты')

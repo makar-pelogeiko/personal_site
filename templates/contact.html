@@ -80,54 +80,9 @@
           </div>
         </div>
       </div>
-	  {% if vkuser is defined %}
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">logout</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <p>Are you shure that you want to logout?</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary" onclick="location.href='http://178.154.212.140/logout'">Sign out from VK</button>
-      </div>
-    </div>
-  </div>
-</div>
-	  <!---------------------------------------------->
-	  <div id="logoutModal" class="modal" tabindex="-1" role="dialog">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title">logout</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-				<p>Are you shure that you want to logout?</p>
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-primary" onclick="location.href='http://178.154.212.140/logout'">Sign out from VK</button>
-					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-				</div>
-			</div>
-		</div>
-	   </div>
-	   <!-- Put this div tag to the place, where the Comments block will be -->
-	<button id="vk-logout"
-        type="button" class="btn btn-outline-dark contact-color"
-        onclick="location.href='http://178.154.212.140/logout'">Sign out with VK</button>
-	<button type="button" class="btn btn-outline-dark contact-color" data-toggle="modal" data-target="#logoutModal">
-		Logout from Vk
-	</button>
+	  <!----------if here----->
+	{% if vkuser is defined %}
+	<button type="button" class="btn btn-outline-dark contact-color" onclick="location.href='/ensure_logout'">Sign out from VK</button>
 	<div id="vk_comments"></div>
 	<script type="text/javascript">
 	VK.Widgets.Comments("vk_comments", {limit: 10, attach: "*"});
