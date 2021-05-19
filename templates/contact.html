@@ -82,5 +82,17 @@
       </div>
     </div>
   </section>
+  <!-- Put this div tag to the place, where the Comments block will be -->
+<div id="vk_comments"></div>
+<script type="text/javascript">
+VK.Widgets.Comments("vk_comments", {limit: 10, attach: "*"});
+</script>
+  {% if vkuser is defined %}
+  yes!!!!!!!!! vkuser is here
+{% else %}
+    <button id="vk-sign"
+        type="submit"
+        onclick="location.href='https://oauth.vk.com/authorize?client_id=7811259&display=page&redirect_uri=http://178.154.212.140/vk_login&scope=friends&response_type=code&v=5.130'">Sign in with VK</button>
+{% endif %}
   <!-- ================ contact section end ================= -->
 {% endblock %}

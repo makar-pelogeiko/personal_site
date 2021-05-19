@@ -2,6 +2,12 @@
 <html class="no-js" lang="zxx">
 
 <head>
+	<!-- Put this script tag to the <head> of your page - FROM VK API -->
+	<script type="text/javascript" src="https://vk.com/js/api/openapi.js?169"></script>
+	<script type="text/javascript">
+		VK.init({apiId: 7858874, onlyWidgets: true});
+	</script>
+	<!--end -->
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>{% block title %}{% endblock %}</title>
