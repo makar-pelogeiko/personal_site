@@ -120,19 +120,20 @@ def vk_login():
     response = requests.get(
         "https://oauth.vk.com/access_token?client_id=7858920&client_secret=TDik1LeKLQ73G7opyiaJ&redirect_uri=http://178.154.212.140/vk_login&code=" + code)
     vk_access_json = json.loads(response.text)
-
+    print('get access')
     if "error" in vk_access_json:
         return redirect(url_for('my_contact'))
-
+    print('no error')
     vk_id = vk_access_json['user_id']
     access_token = vk_access_json['access_token']
-
+    print('take access token')
     response = requests.get('https://api.vk.com/method/users.get?user_ids=' + str(
         vk_id) + '&fields=bdate&access_token=' + access_token + '&v=5.130')
     vk_user_json = json.loads(response.text)
-
+    print('get response from api.vk')
     user = Users.query.filter_by(vk_id=vk_id).first()
     if user is None:
+        print('no such user')
         name = vk_user_json['response'][0]['first_name'] + \
             " " + vk_user_json['response'][0]['last_name']
         new_user = Users(name=name, vk_id=vk_id, vk_access_token=access_token)
