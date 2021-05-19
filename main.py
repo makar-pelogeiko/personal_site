@@ -117,7 +117,7 @@ def vk_login():
         return redirect(url_for('my_contact'))
 
     response = requests.get(
-        "https://oauth.vk.com/access_token?client_id=7811261&client_secret=Y6MK3wukOPGpjWDD1ODr&redirect_uri=http://127.0.0.1:5000/vk_login&code=" + code)
+        "https://oauth.vk.com/access_token?client_id=7858920&client_secret=TDik1LeKLQ73G7opyiaJ&redirect_uri=http://178.154.212.140/vk_login&code=" + code)
     vk_access_json = json.loads(response.text)
 
     if "error" in vk_access_json:
